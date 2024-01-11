@@ -1,5 +1,4 @@
 import org.jetbrains.compose.ExperimentalComposeLibrary
-import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
@@ -31,11 +30,12 @@ kotlin {
     }
     
     sourceSets {
-        
+
         androidMain.dependencies {
             implementation(libs.compose.ui.tooling.preview)
             implementation(libs.androidx.activity.compose)
             implementation(libs.ktor.client.android)
+            implementation(project.dependencies.platform("com.google.firebase:firebase-bom:32.7.0"))
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -48,6 +48,9 @@ kotlin {
             implementation(libs.ktor.client.core)
         }
     }
+}
+dependencies {
+    implementation(libs.firebase.common.ktx)
 }
 
 android {

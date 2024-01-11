@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "712100956833",
+    "project_id": "kmm-projects-cbabd",
+    "storage_bucket": "kmm-projects-cbabd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712100956833:android:c879511daaae487ed83ee0",
+        "android_client_info": {
+          "package_name": "org.godilabs.freelkmm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbO2Dc5ESiqUtHThstGG8zjVhEtAOeZmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
